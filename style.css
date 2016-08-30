@@ -1,0 +1,91 @@
+
+/* CSS resets */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Helpers */
+.left { float: left; }
+.right { float: right; }
+
+/* Basic styling */
+body {
+  font-family: 'Andada', sans-serif;
+  background-color: whitesmoke;
+  color: #444;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  background-color: transparent;
+  color: #E04F5F;
+  border: 3px solid #E04F5F;
+  padding: 5px 10px;
+  font-family: 'Ananda', sans-serif;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:focus {
+  outline:0;
+}
+
+
+/* Header */
+header {
+  clear: both;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.brand {
+  color: #999;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+
+/* Main content */
+.quote {
+  margin-top: 100px;
+}
+
+.quote-content {
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+.quote-author {
+  font-size: 25px;
+  color: #E04F5F;
+  margin-top: 10px;
+}
+
+.quote-author:before {
+  content: '— ';
+}
+
+/* Adapt for smaller screens */
+@media (max-width: 600px) {
+  .quote-content { font-size: 25px; }
+  .quote-author { font-size: 18px; }
+}
+
+@media (max-width: 500px) {
+  .brand { display: none; }
+}
