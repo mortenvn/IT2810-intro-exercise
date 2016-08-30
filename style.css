@@ -24,7 +24,7 @@ body {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 button {
@@ -46,6 +46,7 @@ button:focus {
 /* Header */
 header {
   clear: both;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -61,10 +62,6 @@ header {
 
 
 /* Main content */
-.quote {
-  margin-top: 100px;
-}
-
 .quote-content {
   font-size: 40px;
   line-height: 1.4;
@@ -84,6 +81,8 @@ header {
 @media (max-width: 600px) {
   .quote-content { font-size: 25px; }
   .quote-author { font-size: 18px; }
+  main { padding-top: 20px; }
+  header { margin-bottom: 60px; }
 }
 
 @media (max-width: 500px) {
